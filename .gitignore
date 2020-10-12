@@ -1,5 +1,6 @@
 # ide files
 /.idea
+**/*.iml
 
 # dependencies
 /node_modules
