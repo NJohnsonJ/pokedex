@@ -12,14 +12,13 @@ export interface Resource {
 
 export interface NamedResource extends Resource {
   name: string;
-  names: Name[];
 }
 
 export interface Name extends Multilingual {
   name: string;
 }
 
-export class APIResource<T> {
+export interface APIResource<T> {
   url: string;
 }
 

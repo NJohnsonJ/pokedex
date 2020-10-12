@@ -1,4 +1,4 @@
-import {APIResource, APIResourceList, Resource} from "../types/Utility/CommonModel";
+import {APIResourceList, Resource} from "../types/Utility/CommonModel";
 import Axios from "axios";
 
 class ListGetter<T extends Resource> {
@@ -8,22 +8,27 @@ class ListGetter<T extends Resource> {
     this.list = resourceList;
   }
 
-  getAt(i: number) {
-    if (i > this.list.results.length) {
-      throw new Error('Index out of bounds.');
+  getAt(i: number): Promise<T> {
+    let result = this.list.results[i];
+    if (!result) {
+      return Promise.reject();
     } else {
       return Axios.get(this.list.results[i].url)
           .then(res => res.data);
     }
   }
 
-  getNext() {
+  getNext(): Promise<any> {
+    return Axios.get(this.list.next)
+        .then(result => result.data)
+        .then(data => this.list = data);
+  }
 
+  getPrevious(): Promise<any> {
+    return Axios.get(this.list.previous)
+        .then(result => result.data)
+        .then(data => this.list = data);
   }
 }
-function getResource(resource: APIResource<any>) {
-}
 
-export const getNextResource = <T extends Resource>(list: APIResourceList<T>): Promise<APIResourceList<T>> => {
-  return Axios()
-}
+export default ListGetter;

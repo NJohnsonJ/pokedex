@@ -21,7 +21,7 @@ export interface Pokemon extends NamedResource {
   held_items: PokemonHeldItem[];
   location_area_encounters: string;
   moves: PokemonMove[];
-  sprites: PokemonSprites[];
+  sprites: PokemonSprites;
   species: NamedAPIResource<PokemonSpecies>;
   stats: PokemonStat[];
   types: PokemonType[];
