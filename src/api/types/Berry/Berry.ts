@@ -12,7 +12,7 @@ export interface Berry extends NamedResource {
   smoothness: number;
   soil_dryness: number;
   firmness: NamedAPIResource<BerryFirmness>;
-  flavors: BerryFlavorMap;
+  flavors: BerryFlavorMap[];
   item: NamedAPIResource<Item>;
   natural_gift_type: NamedAPIResource<Type>;
 }
