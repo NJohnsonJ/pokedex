@@ -1,5 +1,5 @@
 import {Name, NamedAPIResource, NamedResource} from "../Utility/CommonModel";
-import Move from "./Move";
+import Move from ".";
 
 export interface MoveAilment extends NamedResource {
   moves: NamedAPIResource<Move>[];

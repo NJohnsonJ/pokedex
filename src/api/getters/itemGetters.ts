@@ -1,5 +1,5 @@
 import {NamedListRequest, NameRequest} from "../Request";
-import Item from "../types/Item/Item";
+import Item from "../types/Item";
 import ItemAttribute from "../types/Item/ItemAttribute";
 import ItemCategory from "../types/Item/ItemCategory";
 import ItemFlingEffect from "../types/Item/ItemFlingEffect";

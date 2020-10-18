@@ -1,5 +1,5 @@
 import {FlavorText, NamedAPIResource, Resource} from "../Utility/CommonModel";
-import Move from "../Move/Move";
+import Move from "../Move";
 
 export interface SuperContestEffect extends Resource {
   appeal: number;

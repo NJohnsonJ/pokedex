@@ -1,5 +1,5 @@
 import {Effect, NamedAPIResource, NamedResource} from "../Utility/CommonModel";
-import Item from "./Item";
+import Item from ".";
 
 export interface ItemFlingEffect extends NamedResource {
   effect_entries: Effect[];

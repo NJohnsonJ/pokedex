@@ -1,7 +1,7 @@
 import {APIResource, Name, NamedAPIResource, NamedResource} from "../Utility/CommonModel";
 import Characteristic from "./Characteristic";
 import Nature from "./Nature";
-import Move from "../Move/Move";
+import Move from "../Move";
 import MoveDamageClass from "../Move/MoveDamageClass";
 
 export interface Stat extends NamedResource {

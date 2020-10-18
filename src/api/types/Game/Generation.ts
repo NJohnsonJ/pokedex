@@ -4,7 +4,7 @@ import PokemonSpecies from "../Pokemon/PokemonSpecies";
 import {Type} from "../Pokemon/Type";
 import Ability from "../Pokemon/Ability";
 import Region from "../Location/Region";
-import Move from "../Move/Move";
+import Move from "../Move";
 
 export interface Generation extends NamedResource {
   abilities: NamedAPIResource<Ability>[];

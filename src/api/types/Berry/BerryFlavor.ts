@@ -1,5 +1,5 @@
 import {Name, NamedAPIResource, NamedResource} from "../Utility/CommonModel";
-import Berry from "./Berry";
+import Berry from ".";
 import ContestType from "../Contest/ContestType";
 
 export interface BerryFlavor extends NamedResource {

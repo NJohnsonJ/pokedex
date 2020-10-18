@@ -2,7 +2,7 @@ import {GenerationGameIndex, Name, NamedAPIResource, NamedResource} from "../Uti
 import Pokemon from "./index";
 import Generation from "../Game/Generation";
 import MoveDamageClass from "../Move/MoveDamageClass";
-import Move from "../Move/Move";
+import Move from "../Move";
 
 export interface Type extends NamedResource {
   damage_relations: TypeRelations;

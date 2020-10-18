@@ -1,5 +1,5 @@
 import {Name, NamedAPIResource, NamedResource} from "../Utility/CommonModel";
-import Item from "./Item";
+import Item from ".";
 import ItemPocket from "./ItemPocket";
 
 export interface ItemCategory extends NamedResource {

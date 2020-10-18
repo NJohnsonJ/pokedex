@@ -2,8 +2,8 @@ import {NamedAPIResource, Resource} from "../Utility/CommonModel";
 import PokemonSpecies from "../Pokemon/PokemonSpecies";
 import {Type} from "../Pokemon/Type";
 import EvolutionTrigger from "./EvolutionTrigger";
-import {Item} from "../Item/Item";
-import Move from "../Move/Move";
+import {Item} from "../Item";
+import Move from "../Move";
 
 export interface EvolutionChain extends Resource {
   baby_trigger_item: NamedAPIResource<Item>;

@@ -1,5 +1,5 @@
 import {NamedListRequest, NameRequest} from "../Request";
-import Berry from "../types/Berry/Berry";
+import Berry from "../types/Berry";
 import BerryFirmness from "../types/Berry/BerryFirmness";
 import BerryFlavor from "../types/Berry/BerryFlavor";
 import {createListGetter, createResourceGetter} from "./getterCreator";

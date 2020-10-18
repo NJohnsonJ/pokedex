@@ -1,5 +1,5 @@
 import {NamedListRequest, NameRequest} from "../Request";
-import Move from "../types/Move/Move";
+import Move from "../types/Move";
 import MoveAilment from "../types/Move/MoveAilment";
 import MoveBattleStyle from "../types/Move/MoveBattleStyle";
 import MoveCategory from "../types/Move/MoveCategory";

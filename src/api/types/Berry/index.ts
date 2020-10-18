@@ -2,7 +2,7 @@ import {NamedAPIResource, NamedResource} from "../Utility/CommonModel";
 import {Type} from "../Pokemon/Type";
 import BerryFirmness from "./BerryFirmness";
 import BerryFlavor from "./BerryFlavor";
-import {Item} from "../Item/Item";
+import {Item} from "../Item";
 
 export interface Berry extends NamedResource {
   growth_time: number;
